@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $site_title }} | {{ $page_title }}</title>
+    <meta property="og:title" content="{{ $site_title }}" />
+    <meta property="og:description" content="Best Investment Platform for making assets." />
+    <meta property="og:image" content="http://revolutionaryretrieve.com/assets/images/logo/icon.png" />
+
     <!--Favicon add-->
     <link rel="shortcut icon" type="image/png" href="{{ asset('assets/images/logo/icon.png') }}">
     <!--bootstrap Css-->
