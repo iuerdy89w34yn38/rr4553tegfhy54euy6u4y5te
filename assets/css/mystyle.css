@@ -1,0 +1,74 @@
+
+
+.logo {
+    width: 230px;
+    padding: 10px;
+}
+
+.apply {
+    background: #19abfa;
+    padding: 12px 70px !important;
+    color: #fff !important;
+}
+
+
+.cg-coin-row img {
+    width: 40px !important;
+}
+
+
+.main-menu ul li a {
+    text-transform: uppercase;
+    color: #000;
+}
+
+
+.pricing-list1 .pricing-header1{
+
+	border: 5px solid #fff;
+    padding: 25px 0px;;
+    background: linear-gradient(67deg, #00d0ff, #008cff, #6cbcff);
+    background-size: 600% 600%;
+    animation: tanim 2s ease infinite;
+}
+@keyframes tanim {
+    0%{background-position:0% 73%}
+    50%{background-position:100% 28%}
+    100%{background-position:0% 73%}
+}
+
+.pricing-list1 .pricing-header1 h5 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    margin: 0px;
+}
+
+.min-price h6 {
+    color: #fff;
+    font-size: 22px;
+    padding-top: 31px;
+    font-weight: 100;
+}
+
+.pricing-list1 a {
+    background-color: #fff;
+}
+.pbtn{
+	background: #fff;
+	padding: 6px !important;
+	border-radius: 1px !important;
+	color: #19abfa !important;
+	transition: 1s linear;
+}
+
+
+.pbtn:hover{
+	background: #000 !important;
+}
+
+
+
+
+
+
