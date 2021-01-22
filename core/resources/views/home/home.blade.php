@@ -97,7 +97,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title text-center">
-                    <h2 class="color-text">Our awesome plans</h2>
+                    <h2 class="color-text">Our awesome plan</h2>
                     <p>{!! $page->plan_subtitle !!}</p>
                 </div>
             </div>

@@ -52,7 +52,9 @@ class UserController extends Controller
         $data['deposit'] = Deposit::whereUser_id(Auth::user()->id)->whereStatus(1)->sum('amount');
         $data['repeat'] = RepeatLog::whereUser_id(Auth::user()->id)->sum('amount');
         $data['withdraw'] = WithdrawLog::whereUser_id(Auth::user()->id)->whereIn('status',[2])->sum('amount');
+        $data['plan'] = Plan::whereStatus(1)->get();
         $data['refer'] = User::where('under_reference',Auth::user()->id)->count();
+
         return view('user.dashboard',$data);
     }
 

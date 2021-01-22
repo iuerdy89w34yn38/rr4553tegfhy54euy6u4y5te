@@ -43,9 +43,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
 
             
-            <!-- REVOLUTION STYLE SHEETS -->
-            <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/rs6.css') }}">
-            <!-- REVOLUTION LAYERS STYLES -->
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/rs6.css') }}">
+    <!-- REVOLUTION LAYERS STYLES -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/mystyle.css') }}">
 
 </head>

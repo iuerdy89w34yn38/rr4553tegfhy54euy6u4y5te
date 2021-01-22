@@ -56,12 +56,94 @@
 
 @include('layouts.breadcam')
 
+
+    <!--start investment plan-->
+    <section class="section-background" style="background: url({{asset('assets/images/patten-1.png') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center section-padding padding-bottom-0 wow " data-wow-duration="2s" style="padding-bottom: 0px">
+                        <div class="section-header">
+                            <h2 style="color: #fff">Our awesome <span> plans</span></h2>
+                            <p><img src="{{asset('assets/images/logo/icon.png') }}" alt="icon"></p>
+                        </div>
+                        <p class="hidden">{!! $page->plan_subtitle !!}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                @foreach($plan as $p)
+                    <div class="col-md-3 col-sm-6 pricing-list-botom-margin wow slideInLeft" data-wow-duration="1s">
+                        <!-- Pricing  List1 Start -->
+                        <div class="pricing-list1">
+                            <div class="pricing-header1">
+                                <h5>{{ $p->name }}</h5>
+                                <p style="display: none;"></p>
+                            </div>
+                            <div class="pricing-info1 hidden">
+                                <ul>
+                                    <li> <p>for <span class="color-text">{{ $p->time }}</span> times</p></li>
+                                    <li><p> <span class="color-text">{{ $p->percent }}%</span> roi each time</p></li>
+                                </ul>
+                            </div>
+                            <div class="price-range">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="min-price">
+                                        <h6> <strong> {{ $p->percent }}% </strong> in {{ $p->compound->name }}</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="min-price">
+                                        <h6>Minimum : <strong> {{ $basic->symbol }}{{ $p->minimum }} </strong> </h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="min-price">
+                                        <h6>Maximum : <strong> {{ $basic->symbol }}{{ $p->maximum }} </strong></h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="min-price">
+                                        <h6>Referal : <strong>  {{ $p->ref }}%</strong></h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="min-price">
+                                        <h6>
+                                        <a href="{!! route('investment-new') !!}"  class="form-control pbtn"  >Order Now </a>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                             </div>
+                          
+                        </div>
+                        <!-- Pricing List1 End -->
+                    </div>
+            @endforeach
+            </div>
+
+        </div>
+</section>
+<!--end start investment plan-->
+
+
 <div class="content_padding">
         <div class="container user-dashboard-body">
              <br>
 
 <div class="clearfix"></div>
     <br>
+<div class="row">
+
+
+
+</div>
+
+
+
 <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="panel panel-primary">
