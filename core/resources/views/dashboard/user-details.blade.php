@@ -7,7 +7,8 @@
 @endsection
 @section('content')
 
-    @if(count($user))
+
+    @if(!empty($user))
 
         <div class="row">
             <div class="col-md-12">
